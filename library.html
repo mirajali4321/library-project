@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Project</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <!-- Title on the left -->
+        <div class="navbar-brand fs-5" >Knowledge Hub</div>
+        <!-- Button on the right to open modal -->
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-toggle="modal"
+          data-target="#exampleModal"
+        >
+          Add Books
+        </button>
+
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-white bg-dark">
+                <h5 class="modal-title" id="exampleModalLabel">Add New Book</h5>
+                <button
+                  type="button"
+                  class="close text-white"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <form>
+                <div class="modal-body">
+                  <div class="form-group">
+                    <label for="exampleInputtitle">Title</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputtitle"
+                      placeholder="Enter title"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputauthor">Author</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputauthor"
+                      placeholder="Enter author name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputpages">Pages</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputpages"
+                      placeholder="Enter pages"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputstatus">Reading status</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputstatus"
+                      placeholder="Enter Reading status"
+                    />
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="submit" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main body   -->
+    <div class="container mt-5">
+        <h2 class="mb-3">Book Library</h2>
+        <table class="table table-striped">
+          <thead class="text-white bg-dark ">
+            <tr>
+              <th scope="col">Sr. No</th>
+              <th scope="col">Title</th>
+              <th scope="col">Author</th>
+              <th scope="col">Pages</th>
+              <th scope="col">Status</th>
+              <th scope="col">Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Book Title 1</td>
+              <td>Author 1</td>
+              <td>200</td>
+              <td>Available</td>
+              <td><button class="btn btn-danger btn-sm">Remove</button></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Book Title 2</td>
+              <td>Author 2</td>
+              <td>300</td>
+              <td>Checked Out</td>
+              <td><button class="btn btn-danger btn-sm">Remove</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+      integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+      integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
